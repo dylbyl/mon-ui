@@ -2,7 +2,7 @@
 
 An Expo/React Native app to generate random ideas for Pokemon designs!
 
-API endpoint allows for seeded generation. Meaning that a design can be truly random, OR a daily design can be generated for all users!
+[The API endpoint allows for seeded generation](https://github.com/dylbyl/mon-api/). Meaning that a design can be truly random, OR a daily design can be generated for all users!
 
 ## Install
 - Clone repo
