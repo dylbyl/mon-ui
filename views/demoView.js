@@ -2,13 +2,13 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, TouchableOpacity, Button } from 'react-native';
 import Routes from '../constants/Routes.js';
 import Theme from '../constants/Theme.js';
+import Logo from './logo.js';
 
 export default function DemoView({ route, navigation }) {
 	const { name } = route.params;
-	let imageUri = 'https://upload.wikimedia.org/wikipedia/en/thumb/7/73/Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp/220px-Pikachu_artwork_for_Pok%C3%A9mon_Red_and_Blue.webp.png'
 	return (
 		<View style={styles.container}>
-			<Image source={{uri: imageUri}} style={styles.pikachu} />
+			<Logo />
 			<Text style={styles.welcome}>Welcome to Make Up a Mon!</Text>
 			<TouchableOpacity
 				onPress={() => alert('Hello World!')}
@@ -17,7 +17,7 @@ export default function DemoView({ route, navigation }) {
 				<Text
 					style={styles.demoButtonText}
 				>
-					Generate a random Mon, {name}
+					Test the Alerts, {name}
 				</Text>
 			</TouchableOpacity>
 			<Button
@@ -26,6 +26,10 @@ export default function DemoView({ route, navigation }) {
 					name: "Dylan",
 					color: Theme.green
 				})}
+			/>
+			<Button
+				title="Generate a random Mon"
+				onPress={() => navigation.navigate(Routes.random)}
 			/>
 			<StatusBar style="auto" />
 		</View>
@@ -42,15 +46,6 @@ const styles = StyleSheet.create({
 	welcome: {
 		color: Theme.black,
 		fontSize: 18
-	},
-	logo: {
-		width: 305,
-		height: 159
-	},
-	pikachu: {
-		height: 198,
-		width: 220,
-		marginBottom: 8
 	},
 	demoButton: {
 		backgroundColor: Theme.red,

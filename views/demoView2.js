@@ -54,7 +54,7 @@ export default function DemoView2({ route, navigation }) {
 		<Button
 			title="I'm Matt"
 			onPress={() => navigation.setOptions({
-				title: "Suck one, Matt"
+				title: "Oh god, it's Matt"
 			})}
 		/>
 	  </View>
