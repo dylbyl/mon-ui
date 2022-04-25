@@ -25,4 +25,4 @@ For now, please press W after running the app to launch it in your computer's br
 ![image](https://user-images.githubusercontent.com/6615820/165174489-9196d980-8712-4309-8aac-70160d107afc.png)
 ![image](https://user-images.githubusercontent.com/6615820/165174553-980a422b-aaea-459f-a3ef-58a4f33fdb6e.png)
 ![image](https://user-images.githubusercontent.com/6615820/165174590-1dc26eb2-8b7c-454e-8383-ca8890342667.png)
-![image](https://user-images.githubusercontent.com/6615820/165174642-e68e0b29-eb35-45a2-a573-93e399f02343.png)
+![image](https://user-images.githubusercontent.com/6615820/165174768-2f8ca1b6-452b-4a63-bc88-50104b91a204.png)
