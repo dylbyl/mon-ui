@@ -13,7 +13,8 @@ An Expo/React Native app to generate random ideas for Pokemon designs!
 - Press W to run the app in your browser
 - Test the app, and be amazed!
 
-- **Note: Only do try this method later, once I get the API interacting properly, or deploy the API publicly**
+
+**Note: Only do try this method later, once I get the API interacting properly, or deploy the API publicly**
 - Using the Expo Go app, scan the QR code that appears
 - Test the app, and be amazed!
 
