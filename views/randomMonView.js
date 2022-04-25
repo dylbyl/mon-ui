@@ -37,7 +37,10 @@ export default function RandomMonView({ route, navigation }) {
 		getMon(type);
 	}, [])
 
-	const listItem = (item) => <Text style={styles.monItem}>{item}</Text>
+	const listItem = (item) => {
+		if (item === null) return null;
+		return <Text style={styles.monItem}>{item}</Text>
+	}
 	const listHeader = (title) => <Text style={styles.monHeader}>{title}</Text>
 	const button = (text, onPress, pressArguments) => <TouchableOpacity
 		onPress={() => onPress(pressArguments)}
@@ -50,6 +53,7 @@ export default function RandomMonView({ route, navigation }) {
 		</Text>
 	</TouchableOpacity>
 
+	// TODO Refactor the SectionList - it's just not working with how I'd like my API return to look
 	return (
 		<View style={styles.container}>
 			<Logo />
@@ -68,6 +72,7 @@ export default function RandomMonView({ route, navigation }) {
 				<SectionList
 					style={styles.sectionList}
 					sections={[
+						{ title: "Type", data: mon.types },
 						{ title: "Base Designs", data: mon.baseDesigns },
 						{ title: "Descriptors", data: mon.descriptors },
 						{ title: "Extra Concepts", data: mon.extraConcepts },
@@ -145,7 +150,10 @@ const styles = StyleSheet.create({
 		fontWeight: "normal"
 	},
 	sectionList: {
-		marginBottom: 10
+		paddingLeft: 20,
+		paddingRight: 20,
+		marginBottom: 10,
+		minWidth: 402
 	},
 	imageContainer: {
 		position: "relative"
