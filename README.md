@@ -1,3 +1,4 @@
+![image](https://user-images.githubusercontent.com/6615820/165180497-1b1866a0-0317-4483-af39-d7ded40d6be9.png)
 # Make Up a Mon - UI
 
 An Expo/React Native app to generate random ideas for Pokemon designs!
